@@ -107,7 +107,7 @@ ul{
 }
 
 /*--------------------------PORTFOLIO ---------------------------------*/
-#info {
+#info{
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
     border-radius:5px;              
@@ -123,7 +123,7 @@ ul{
     -o-box-sizing: border-box;
 }
 
-#info .info-wrapper {
+#info .info-wrapper{
     padding:10px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -131,17 +131,17 @@ ul{
 
 }
     
-#info a {
+#info a{
     color:#c09853;
     text-decoration:none;
 }   
     
-#info p {
+#info p{
     margin:5px 0 0 0;
 }
 
 
-.container { 
+.container{ 
     position: relative; 
     width: 960px; 
     margin: 0 auto; 
@@ -151,17 +151,17 @@ ul{
 	transition: all 1s ease;
 }
  
-#filters {
+#filters{
     margin:1%;
     padding:0;
     list-style:none;
 }
 
-#filters li {
+#filters li{
     float:left;
 }
     
-#filters li span {
+#filters li span{
     display: block;
     padding:5px 20px;       
     text-decoration:none;
@@ -169,12 +169,12 @@ ul{
     cursor: pointer;
 }
     
-#filters li span .active {
+#filters li span .active{
     background: #e95a44;
     color:#fff;
 }
  
-#portfoliolist .portfolio {
+#portfoliolist .portfolio{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -o-box-sizing: border-box;
@@ -185,26 +185,26 @@ ul{
     overflow:hidden;
 }
 
-.portfolio-wrapper {
+.portfolio-wrapper{
     overflow:hidden;
     position: relative !important;
     background: #666;
     cursor:pointer;
 }
 
-.portfolio img {
+.portfolio img{
     max-width:100%;
     position: relative;
 }
     
-.portfolio .label {
+.portfolio .label{
     position: absolute;
     width: 100%;
     height:40px;
     bottom:-40px;
 }
 
-.portfolio .label-bg {
+.portfolio .label-bg{
     background: #e95a44;
     width: 100%;
     height:100%;
@@ -213,21 +213,21 @@ ul{
     left:0;
 }
     
-.portfolio .label-text {
+.portfolio .label-text{
     color:#fff;
     position: relative;
     z-index:500;
     padding:5px 8px;
 }
             
-.portfolio .text-category {
+.portfolio .text-category{
     display:block;
     font-size:9px;
 }
     
 /* #Tablet (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .container {
+    .container{
         width: 768px; 
     }
 }
@@ -235,16 +235,16 @@ ul{
 
 /*  #Mobile (Portrait) - Note: Design for a width of 320px */
 @media only screen and (max-width: 767px) {
-    .container { 
+    .container{ 
         width: 95%; 
     }
     
-    #portfoliolist .portfolio {
+    #portfoliolist .portfolio{
         width:48%;
         margin:1%;
     }       
 
-    #ads {
+    #ads{
         display:none;
     }
     
@@ -253,11 +253,11 @@ ul{
 
 /* #Mobile (Landscape) - Note: Design for a width of 480px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    .container {
+    .container{
         width: 70%;
     }
     
-    #ads {
+    #ads{
         display:none;
     }
     
