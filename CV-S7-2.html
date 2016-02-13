@@ -11,44 +11,7 @@
 	</head>
 	
     <body>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-		<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-		<script type="text/javascript">
-			$(function () {
-				var filterList = {
-					init: function () {
-						// Plugin Mixitup, qui permet de filtrer les vignettes par catégorie
-						$('#portfoliolist').mixitup({
-							targetSelector: '.portfolio',
-							filterSelector: '.filter',
-							effects: ['fade'],
-							easing: 'snap',
-							// call the hover effect
-							onMixEnd: filterList.hoverEffect()
-						});             
-					},
-					
-					hoverEffect: function () {
-						// Fonction pour l'effet "hover"
-						$('#portfoliolist .portfolio').hover(
-							function () {
-								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
-							},
-							function () {
-								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
-							}       
-						);              
-					}
-				};
-				
-				// Lance les deux fonctions "hover" et "filtre"
-				filterList.init();
-			}); 
-		</script>
+		
 		<header>
 			<div id="Users">
 				<div id="Nom_fonction">
@@ -63,7 +26,7 @@
 		
 		<main>
 			<div class="contents1">
-				<div class="container-fluid">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-4 col-sd">
 							<h3>EXPERIENCES PROFESSIONNELLES</h3>
@@ -103,10 +66,7 @@
 							<li><a href="http://www.freecodecamp.com/ben135587">mon compte FreeCodeCamp</a></li>
 						</ul>
 					</div>
-				<!--</div>
-			</div>
-			
-			<div class="container-fluid">-->
+				
 			<div class="row">
 				<h2>Mon portfolio</h2>
 				<!--data-filter permet de filtrer les vignettes par catégorie-->
@@ -302,7 +262,44 @@
 			</div>
 		</footer>
 	    
-	      
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				var filterList = {
+					init: function () {
+						// Plugin Mixitup, qui permet de filtrer les vignettes par catégorie
+						$('#portfoliolist').mixitup({
+							targetSelector: '.portfolio',
+							filterSelector: '.filter',
+							effects: ['fade'],
+							easing: 'snap',
+							// call the hover effect
+							onMixEnd: filterList.hoverEffect()
+						});             
+					},
+					
+					hoverEffect: function () {
+						// Fonction pour l'effet "hover"
+						$('#portfoliolist .portfolio').hover(
+							function () {
+								$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+								$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');             
+							},
+							function () {
+								$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+								$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');                               
+							}       
+						);              
+					}
+				};
+				
+				// Lance les deux fonctions "hover" et "filtre"
+				filterList.init();
+			}); 
+		</script>  
 		
       
 	</body>
